@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    text-align: center;
+    color: rgb(82,140,134);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    height: 5vh;
+    padding-top: 2.5vh;
+    text-align: left;
+}
+
+nav a{    
+    text-decoration: none;
+    padding-left: 40px;
+    font-weight: 600;
+}
+
+nav a:hover{
+    color: rgb(123, 205, 197);
+
+}
+
+header{
+    width: 100%;
+    height: 70vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.intro{
+    padding-top: 2vh;
+    visibility:hidden;
+    position: absolute;
+    top: 65vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 5vh;
+    font-size: 140%;
+}
+header:hover .intro{
+    visibility: visible;
+}
+
+hr{
+    border-top: 2px solid rgb(82,140,134);
+    width: 20%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.profile-picture{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    height:10vw;
+    width: 10vw;
+    border-radius: 50%;
+}
+
+.projects a{
+    text-decoration: none;
+}
+
+.project{
+    margin: 20px;
+    margin-right: 20vw;
+    margin-left: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .2s;
+
+}
+
+.project:hover {
+    transform: scale(1.03);
+    
+}
+
+.card{
+    object-fit: cover;
+    height:13vw;
+    width: 20vw;
+    margin-right: 20px;
+    border-radius: 10%;
+}
+
+.desc{
+    width: 20vw;
+}
+
+.gallery{
+    margin-top: 10px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.gallery .row img{    
+    margin: 5px;    
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+}
+@media screen and (max-width: 1000px) {
+    .profile-picture{                
+        height:20vw;
+        width: 20vw;
+    }
+    
+}
+@media screen and (max-width: 736px) {
+    .profile-picture{                
+        height:50vw;
+        width: 50vw;
+    }
+    .gallery .row img{    
+        height: 80vw; 
+        width: 80vw;
+    }
+    .project{
+        flex-direction: column;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+    .card{
+    object-fit: cover;
+    height:50vw;
+    width: 76vw;            
+    }
+    .desc{
+        width: 76vw;
+    }
+    nav a{    
+        padding-left: 20px;
+    }
+}
