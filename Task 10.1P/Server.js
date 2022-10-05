@@ -14,7 +14,7 @@ app.use(express.json());
 app.post('/signup' , (req,res)=>{
     console.log(req.body)
     const sgMail = require('@sendgrid/mail')
-    sgMail.setApiKey("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")
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY)
     const msg = {
     to: req.body.email, 
     from: 'cameronhum@hotmail.com', 
