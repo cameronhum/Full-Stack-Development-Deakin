@@ -1,0 +1,20 @@
+.emailComponent{
+    background-color: rgb(207, 207, 207);
+    display: flex;
+}
+
+.emailComponent h1{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.emailComponent input{
+    margin-top: 5px;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.emailComponent button{
+    margin-top: 5px;
+    height: 40px;
+}
